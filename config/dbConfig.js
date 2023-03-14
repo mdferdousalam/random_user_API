@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
 // Define the database connection URI
-const DB_URI = 'mongodb://localhost:27017/my-api';
+const DB_URI = "mongodb+srv://marthalaferdous:marthalaferdous@marthala1.bzgykcg.mongodb.net/randomuser";
 
-// Connect to the database
 mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to database');
