@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
+// require('dotenv').config();
 
-// Define the database connection URI
-const DB_URI = "mongodb+srv://marthalaferdous:marthalaferdous@marthala1.bzgykcg.mongodb.net/randomuser";
-
-mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to database');
     })
